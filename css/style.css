@@ -80,16 +80,20 @@ header
     .card
     { margin-bottom: 20px; }
 
-    .scroll { 
-        margin:4px, 4px; 
-        padding:4px; 
-        background-color: green; 
-        width: 500px; 
-        height: 110px; 
-        overflow-x: hidden; 
-        overflow-x: auto; 
-        text-align:justify; 
-    }
+    .pembungkus
+    { height: 80px; }
+
+    nav
+    { top: -5px; }
+
+    .nav-item
+    {padding: 10px;}
+
+    .nav-item .dropdown
+    { align-items: center; }
+
+    .dropdown-menu .show li
+    { padding: 0; }
 }
 @media only screen and (min-width: 991px) {
     button .navbar-toggler
@@ -106,7 +110,4 @@ header
 
     .nav-link:hover::after
     {  opacity: 1; }
-
-    .dropdown
-    {  }
 }
