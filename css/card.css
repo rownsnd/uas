@@ -1,0 +1,17 @@
+.yamaha, .honda
+{ justify-content: space-around;}
+
+.card-list img:hover
+{ transform: scale(1.1); transition: 0.5s; }
+
+.honda a
+{ background-color: red; border: none; }
+
+.honda a:hover
+{ background-color:rgb(238, 32, 32); }
+
+#sejarah #tbl-honda
+{ background-color: red; border: none; }
+
+#sejarah #tbl-honda:hover
+{ background-color:rgb(238, 32, 32) }
