@@ -1,0 +1,11 @@
+.selengkapnya
+{overflow-x: hidden;  }
+
+
+@media only screen and (max-width: 991px) {
+    .selengkapnya
+    { font-size: 12px; display: flex; flex-direction: column ; }
+
+    .spek th
+    { width: 20px; }
+}
