@@ -75,7 +75,7 @@ header
 .spek
 { width: 80vh; }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
     #navigation
     { height: 80px;}
 
