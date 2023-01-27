@@ -101,7 +101,10 @@ header
     /* .navbar-collapse .navbar-nav
     { align-items: center; } */
 }
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 768px) {
+    .navbar-nav
+    { background-color: #fff; border-radius: 20px; justify-content: center;}
+
     button .navbar-toggler
     { display: none; }
 

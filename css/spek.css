@@ -8,4 +8,10 @@
 
     .spek th
     { width: 20px; }
+
+    iframe
+    { width: 100%; }
+
+    .slide-motor .carousel-item img 
+    { width: 100%; }
 }
