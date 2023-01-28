@@ -29,7 +29,7 @@ header
 { padding: 5px; }
 
 .navbar-nav li
-{ padding: 20px; }
+{ padding: 10px; }
 
 .logo img
 { width: 200px; height: auto; }
@@ -76,11 +76,23 @@ header
 { width: 80vh; }
 
 @media only screen and (max-width: 768px) {
+    header
+    { height: 65px;}
+
+    header .navbar
+    { height: 65px; }
+
+    .logo img
+    { width: 150px; height: auto; }
+
     #navigation
     { height: 80px;}
 
     .navbar-nav
     { background-color: #fff; border-radius: 20px; justify-content: center;}
+
+    .navbar-nav li
+    { padding: 10px; }
 
     .card
     { margin-bottom: 20px; }
@@ -95,8 +107,8 @@ header
     {padding: 10px;}
 
 
-    .navbar-collapse .nav-item
-    { padding: 10px;}
+    /* .navbar-collapse .nav-item
+    { padding: 10px;} */
 
     /* .navbar-collapse .navbar-nav
     { align-items: center; } */

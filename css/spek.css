@@ -1,5 +1,8 @@
 .selengkapnya
-{overflow-x: hidden;  }
+{overflow-x: hidden;  display: flex; flex-direction: row-reverse;}
+
+.carousel
+{ width: 560px; }
 
 button
 { margin-top: 10px; margin-bottom: 10px;}

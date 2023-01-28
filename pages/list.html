@@ -48,7 +48,7 @@
 </header>
 
 <div class="container">
-  <div id="yamaha-focus" style="height: 80px;"></div>
+  <div id="yamaha-focus" style="height: 80px; margin-left: 100px;"><h4>Ride With Limit</h4></div>
   <div class="container">
     <div class="card-list mt-3">
         <div class="judul" id="yamaha">
@@ -350,16 +350,42 @@
 
 
 <script>
-  function tambahIcon() {
+  function tambahIconHome() {
     const ambil =  document.getElementById('home')
     const icon = ` <i class="fa fa-home">`
-      if (window.matchMedia("(max-width: 991px)").matches) {
+      if (window.matchMedia("(max-width: 768px)").matches) {
         document.getElementById('home').innerHTML += icon;
+    }else {
+      document.getElementById('home').innerHTML += "";
     }
   };
-  tambahIcon();
+  tambahIconHome()
+  function tambahIconList() {
+    const ambil =  document.getElementById('list')
+    const icon = ` <i class="fa fa-th-list">`
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        document.getElementById('list').innerHTML += icon;
+    }else {
+      document.getElementById('list').innerHTML += "";
+    }
+  };
+  tambahIconList();
+  function tambahIconContact() {
+    const ambil =  document.getElementById('contact')
+    const icon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>`
+      if (window.matchMedia("(max-width: 991px)").matches) {
+        document.getElementById('contact').innerHTML += icon;
+    }else {
+      document.getElementById('contact').innerHTML += "";
+    }
+  };
+  tambahIconListContact();
 </script>
-
+  
+<script>
+  const shadow =  document.querySelector('header').style.boxShadow = "0 2px 4px 0 rgba(0,0,0,.2)";
+</script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
