@@ -1,6 +1,11 @@
 .selengkapnya
 {overflow-x: hidden;  display: flex; flex-direction: row-reverse;}
 
+.carousel-control-prev
+{ height: 40px; width: 40px; margin-top: 25%; margin-left: 25px;background-color: rgba(0, 0, 0, 0.406);}
+
+.carousel-control-next
+{ height: 40px; width: 40px; margin-top: 25%; margin-right: 25px;background-color: rgba(0, 0, 0, 0.406);}
 .carousel
 { width: 560px; }
 
@@ -13,6 +18,9 @@ button
 
     .spek th
     { width: 20px; }
+
+    .carousel
+    { width: 100%; }
 
     iframe
     { width: 100%; }
