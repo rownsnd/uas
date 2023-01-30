@@ -79,7 +79,8 @@ header
 .spek
 { width: 80vh; }
 
-
+.bawah
+{display: flex; justify-content: center;}
 
 @media only screen and (max-width: 576px) {
     header
@@ -118,11 +119,8 @@ header
     .dropdown-menu .show
     { align-items: center; }
 
-    /* .navbar-collapse .nav-item
-    { padding: 10px;} */
-
-    /* .navbar-collapse .navbar-nav
-    { align-items: center; } */
+    .bawah
+    {display: flex; flex-direction: column; }
 }
 @media only screen and (min-width: 768px) {
     .navbar-nav
