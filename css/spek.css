@@ -14,10 +14,10 @@ button
 
 @media only screen and (max-width: 576px) {
     .carousel-control-prev
-    { height: 40px; width: 40px; margin-top: 140px; margin-left: 25px;background-color: rgba(0, 0, 0, 0.406);}
+    { height: 40px; width: 40px;  background-color: rgba(0, 0, 0, 0.406); align-items: center;}
 
     .carousel-control-next
-    { height: 40px; width: 40px; margin-top: 140px; margin-right: 25px;background-color: rgba(0, 0, 0, 0.406);}
+    { height: 40px; width: 40px;  margin-right: 25px;background-color: rgba(0, 0, 0, 0.406);}
     .carousel
     { width: 560px; margin-top: 50px; }
 
@@ -31,8 +31,8 @@ button
     { width: 100%; }
 
     iframe
-    { width: 100%; }
+    { width: 100%; height: 200px; }
 
     .slide-motor .carousel-item img 
-    { width: 100%; }
+    { width: 100%; max-width: 100%; }
 }
