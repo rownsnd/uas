@@ -26,6 +26,8 @@ button
 
     .spek th
     { width: 20px; }
+    .spek a 
+    { margin-bottom: 20px; }
 
     .carousel
     { width: 100%; }
