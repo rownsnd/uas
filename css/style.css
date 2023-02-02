@@ -48,11 +48,17 @@ header
 #kawasaki h2
 { display: flex; align-items: center; }
 
+#honda h2
+{ display: flex; align-items: center; }
+
 #kawasaki img
 { width: 50px; margin-right: 20px; margin-top: 3px;}
 
 #yamaha img
 { width: 40px; margin-right: 20px;}
+
+#honda img
+{ margin-right: 15px; }
 
 .honda
 { background: #e5322e ;  }
