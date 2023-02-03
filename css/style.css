@@ -89,6 +89,14 @@ header
 .bawah
 {display: flex; justify-content: center;}
 
+.hubungi img
+{ width: 30px; margin-right: 10px;}
+
+.hubungi a:hover
+{ text-decoration: underline; }
+
+#garis-info
+{ width: 500px; }
 
 @media only screen and (max-width: 576px) {
     header
@@ -132,6 +140,10 @@ header
 
     #slogan
     { margin: 50px 50px; }
+
+    #garis-info
+    { width: 250px; }
+
 }
 @media only screen and (min-width: 768px) {
     .navbar-nav
