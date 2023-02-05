@@ -18,7 +18,7 @@ header
 { color: #e5322e; font-weight: 500; margin: 5px; letter-spacing: 2px;}
 
 .navbar-nav .nav-item a:hover
-{ background-color: #e5322e; color: #fff; border-radius: 5px;}
+{ background-color: #e5322e; color: #fff; border-radius: 2px;}
 
 
 .dropdown-menu li a:hover
