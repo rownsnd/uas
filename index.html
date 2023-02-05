@@ -49,6 +49,11 @@
     </div>
 </header>
 
+
+<div class="motor-slide">
+    <img src="./multimedia/picture/list-motosport/ducati/panigalev4s.png" id="utama" style="width: 1000px;">
+</div>
+
 <div class="text">
     <img src="./multimedia/picture/assets/randj.png" style="width: 200px;" id="intro">
     <p>R&<span style="color: #e5322e;">J</span> MotoSport Memberikan experience dalam membeli Motor Sport yang istimewa, dengan stock unit terbaru dan pelayanan terpadu.</p>
@@ -57,14 +62,58 @@
     <a href="./pages/list.html" class="btn" >Let's Ride... </a>
 
     <div class="list-merk">
-        <img src="./multimedia/picture/assets/hondalogo.png">
-        <img src="./multimedia/picture/assets/kawasakilogo.png">
-        <img src="./multimedia/picture/assets/ducatiiconlogo.png">
-        <img src="./multimedia/picture/assets/bmwlogoicon.png">
-        <img src="./multimedia/picture/assets/yamahalogo.png">
+        <img src="./multimedia/picture/assets/ducatiiconlogo.png" onclick="changeImageDucati()" id="ducati">
+        <img src="./multimedia/picture/assets/hondalogo.png" onclick="changeImageHonda()" id="honda">
+        <img src="./multimedia/picture/assets/kawasakilogo.png" onclick="changeImageKawasaki()" id="kawasaki">
+        <img src="./multimedia/picture/assets/bmwlogoicon.png" onclick="changeImagebmw()" id="bmw">
+        <img src="./multimedia/picture/assets/yamahalogo.png" onclick="changeImageYamaha()" id="yamaha">
     </div>
 </div>
 
+
+<script>
+    const ducati = document.getElementById('ducati')
+    const yamaha = document.getElementById('yamaha')
+    const honda = document.getElementById('honda')
+    const kawasaki = document.getElementById('kawasaki')
+    const bwm = document.getElementById('bmw')
+    const utama = document.getElementById('utama')
+    function changeImageHonda() {
+        if(honda.src.match("./multimedia/picture/assets/hondalogo.png")){
+            utama.src = ("./multimedia/picture/list-motosport/honda/bgslidehonda.png")
+            utama.style.width = ("900px") 
+            utama.style.transition = ("0.5s")
+        }
+    }
+    function changeImageDucati() {
+        if(ducati.src.match("./multimedia/picture/assets/ducatiiconlogo.png")){
+            utama.src = ("./multimedia/picture/list-motosport/ducati/panigalev4s.png")
+            utama.style.width = ("1000px")
+            utama.style.transition = ("0.5s")
+        }
+    }
+    function changeImageYamaha() {
+        if(yamaha.src.match("./multimedia/picture/assets/yamahalogo.png")){
+            utama.src = ("./multimedia/picture/list-motosport/yamaha/mt10.png")
+            utama.style.width = ("700px")
+            utama.style.transition = ("0.5s")
+        }
+    }
+    function changeImageKawasaki() {
+        if(kawasaki.src.match("./multimedia/picture/assets/kawasakilogo.png")){
+            utama.src = ("./multimedia/picture/list-motosport/kawasaki/bgslidekawasaki.png")
+            utama.style.width = ("800px")
+            utama.style.transition = ("0.5s")
+        }
+    }
+    function changeImagebmw() {
+        if(bwm.src.match("./multimedia/picture/assets/bmwlogoicon.png")){
+            utama.src = ("./multimedia/picture/list-motosport/bmw/bgslidebwm.png")
+            utama.style.width = ("900px")
+            utama.style.transition = ("0.5s")
+        }
+    }
+</script>
 
 <script>
     function tambahIcon() {

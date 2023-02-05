@@ -108,10 +108,13 @@ header
 { padding: 20px; }
 
 .list-merk
-{ display: flex; justify-content: space-around; margin: 100px; background-color: #eeeeee; border-radius: 5px;}
+{ display: flex; justify-content: space-around; margin: 100px; background-color: #eeeeee; border-radius: 5px; position: relative;}
 
 .list-merk img
-{ padding: 10px;  width: 80px;}
+{ padding: 10px;  width: 80px; opacity: 70%; transition: all 0.3s; cursor: pointer;}
+
+.list-merk img:hover
+{ opacity: 100%;}
 
 
 @media only screen and (max-width: 576px) {
@@ -161,7 +164,7 @@ header
     { width: 250px; }
 
     .list-merk
-    { width: 350px; }
+    { width: 350px; margin-top: 80px;}
 
     .list-merk img 
     { width: 70px; opacity: 100%; }
