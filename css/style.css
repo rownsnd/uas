@@ -18,7 +18,11 @@ header
 { color: #e5322e; font-weight: 500; margin: 5px; letter-spacing: 2px;}
 
 .navbar-nav .nav-item a:hover
-{ background-color: #e5322e; color: #fff; }
+{ background-color: #e5322e; color: #fff; border-radius: 5px;}
+
+
+.dropdown-menu li a:hover
+{ transform: translateX(10px); transition: 0.3s; width: 115px; }
 
 .nav-item a
 { padding: 5px; }
@@ -100,6 +104,18 @@ header
 #garis-info
 { width: 500px; }
 
+#slogan
+{ padding: 20px; }
+
+.list-merk
+{ display: flex; justify-content: space-around; margin: 100px; background-color: #eeeeee; border-radius: 5px;}
+
+.list-merk img
+{ padding: 10px; opacity: 50%; width: 80px;}
+
+.list-merk img:hover
+{ opacity: 100%; transition: 0.2s;}
+
 @media only screen and (max-width: 576px) {
     header
     { height: 65px; }
@@ -141,10 +157,17 @@ header
     {display: flex; flex-direction: column; }
 
     #slogan
-    { margin: 50px 50px; }
+    { padding: 20px; }
 
     #garis-info
     { width: 250px; }
+
+    .list-merk
+    { width: 350px; }
+
+    .list-merk img 
+    { width: 70px; opacity: 100%; }
+
 
 }
 @media only screen and (min-width: 768px) {
