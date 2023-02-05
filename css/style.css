@@ -1,6 +1,19 @@
 *
 { margin: 0;  padding: 0; }
 
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #e5322e;
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
 
 header
 { background-color: #fff; z-index: 99;}
@@ -23,6 +36,7 @@ header
 
 .dropdown-menu li a:hover
 { transform: translateX(10px); transition: 0.3s; width: 115px; }
+
 
 .nav-item a
 { padding: 5px; }
@@ -108,7 +122,7 @@ header
 { padding: 20px; }
 
 .list-merk
-{ display: flex; justify-content: space-around; margin: 100px; background-color: #eeeeee; border-radius: 5px; position: relative;}
+{ display: flex; justify-content: space-around; margin: 100px; background-color: #eeeeee; border-radius: 5px; position: relative; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
 
 .list-merk img
 { padding: 10px;  width: 80px; opacity: 70%; transition: all 0.3s; cursor: pointer;}
@@ -134,7 +148,7 @@ header
     { height: 80px;}
 
     .navbar-nav
-    { background-color: #fff; border-radius: 20px; justify-content: center;}
+    { background-color: #fff; border-radius: 20px; border: 1px black;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; border-width: 1px;}
 
     .navbar-nav li
     { padding: 10px; }
@@ -151,9 +165,6 @@ header
     .nav-item
     {padding: 10px;}
 
-    .dropdown-menu .show
-    { align-items: center; }
-
     .bawah
     {display: flex; flex-direction: column; }
 
@@ -164,7 +175,7 @@ header
     { width: 250px; }
 
     .list-merk
-    { width: 350px; margin-top: 80px;}
+    { width: 350px; margin: 30px;}
 
     .list-merk img 
     { width: 70px; opacity: 100%; }

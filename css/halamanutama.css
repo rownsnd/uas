@@ -2,10 +2,10 @@ body
 { background-image: url(../multimedia/picture/assets/bgpolos.png) ; width: 100%; background-repeat: no-repeat; }
 
 .text
-{ width: 700px; float: right; margin: 100px; display: flex ; flex-direction: column; align-items: center; z-index: 10;}
+{ width: 700px; float: right; margin: 100px; display: flex ; flex-direction: column; align-items: center; z-index: 10; }
 
 .text p
-{font-size: 1.2em; font-weight: 500; letter-spacing: 1px; }
+{ background-color: #ffffffd4; font-size: 1.2em; font-weight: 500; letter-spacing: 1px; }
 
 .text  .moto 
 { margin-top: 100px;  height: 60px; width: 380px; transform: skew(20deg);text-align: center; background-color: blue;; padding: 10px; border-radius: 20px; color: #fff;}
@@ -23,23 +23,27 @@ body
 { color: #fff; background-color: #e5322e ; opacity: 0.8; transition: 0.5s; text-transform: uppercase;}
 
 .motor-slide
-{ z-index: 5; bottom: 0; position: absolute; margin-left: 100px;}
+{ z-index: 5; bottom: 0; position: absolute; margin-left: 100px; }
 
 .motor-slide img 
 { width: 800px; transform: translateX(0); transition: none; }
 
 @media only screen and (max-width: 576px) {
     .motor-slide
-    { margin-left: 0; bottom: 100px;}
+    { display: none;}
 
     .motor-slide img 
     { width: 100% !important; }
+
     .text
     { width: 100%; margin-top: 50px; height: 100vh; position: fixed; float:inherit; margin-left: auto; padding:10px 50px ;}
 
     .text p
-    { text-align: center; } 
+    { text-align: center; box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; border-radius: 3px;} 
 
     #intro
     { display: none; }
+
+    body 
+    { overflow-x: scroll; }
 }
