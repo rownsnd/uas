@@ -28,6 +28,8 @@ body
 .motor-slide img 
 { width: 1000px; transform: translateX(0); transition: none; }
 
+
+
 @media only screen and (max-width: 576px) {
     .motor-slide
     { display: none;}
@@ -48,12 +50,18 @@ body
     { overflow-x: scroll; }
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 767px) {
+@media only screen and (max-width: 1600px) and (min-width: 1281px) {
     body
     { overflow-y: hidden; }
     
     .text
     { width: 450px; font-size: 12px; }
+
+    .list-merk img
+    { width: 60px; }
+
+    .motor-slide
+    { bottom: 0;}
 
     .motor-slide img
     { width: 800px ;}
@@ -68,12 +76,19 @@ body
 }
 
 @media only screen  and (max-width: 1280px) and (min-width: 992px){
+    .text
+    { width: 450px; font-size: 12px; }
 
     .motor-slide img
     { width: 600px ;}
+
     .motor-slide 
     { margin-left: 20px; }
 
     .list-merk img
     { width: 60px; }
+}
+@media only screen  and (max-width: 991px){
+    .motor-slide
+    {  display: none;}
 }
