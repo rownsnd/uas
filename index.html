@@ -59,7 +59,7 @@ Kelas : IF - 8
 
 
 <div class="motor-slide">
-    <img src="./multimedia/picture/list-motosport/ducati/panigalev4s.png" id="utama" style="width: 1000px;" loading="eager">
+    <img src="./multimedia/picture/list-motosport/ducati/panigalev4s.png" id="utama" loading="eager">
 </div>
 
 <div class="text">
@@ -83,7 +83,7 @@ Kelas : IF - 8
 
     window.addEventListener("load", function(){
         preloader.style.display = "none"
-        preloader.style.animation = "ease 1s"
+        preloader.style.transition = "fade-out 1s"
     })
 </script>
 
@@ -99,35 +99,65 @@ Kelas : IF - 8
             utama.src = ("./multimedia/picture/list-motosport/honda/bgslidehonda.png")
             utama.style.width = ("900px") 
             utama.style.transition = ("0.5s")
-        }
+        };
+        if (window.matchMedia("(max-width: 1600px)").matches){
+            utama.style.width = ("700px") 
+        };
+        if (window.matchMedia("(max-width: 1280px)").matches){
+            utama.style.width = ("600px") 
+        };
     }
     function changeImageDucati() {
         if(ducati.src.match("./multimedia/picture/assets/ducatiiconlogo.png")){
             utama.src = ("./multimedia/picture/list-motosport/ducati/panigalev4s.png")
             utama.style.width = ("1000px")
             utama.style.transition = ("0.5s")
-        }
+        };
+        if (window.matchMedia("(max-width: 1600px)").matches){
+            utama.style.width = ("800px") 
+        };
+        if (window.matchMedia("(max-width: 1280px)").matches){
+            utama.style.width = ("650px") 
+        };
     }
     function changeImageYamaha() {
         if(yamaha.src.match("./multimedia/picture/assets/yamahalogo.png")){
             utama.src = ("./multimedia/picture/list-motosport/yamaha/mt10.png")
             utama.style.width = ("700px")
             utama.style.transition = ("0.5s")
-        }
+        };
+        if (window.matchMedia("(max-width: 1600px)").matches){
+            utama.style.width = ("600px") 
+        };
+        if (window.matchMedia("(max-width: 1280px)").matches){
+            utama.style.width = ("500px") 
+        };
     }
     function changeImageKawasaki() {
         if(kawasaki.src.match("./multimedia/picture/assets/kawasakilogo.png")){
             utama.src = ("./multimedia/picture/list-motosport/kawasaki/bgslidekawasaki.png")
             utama.style.width = ("800px")
             utama.style.transition = ("0.5s")
-        }
+        };
+        if (window.matchMedia("(max-width: 1600px)").matches){
+            utama.style.width = ("700px") 
+        };
+        if (window.matchMedia("(max-width: 1280px)").matches){
+            utama.style.width = ("550px") 
+        };
     }
     function changeImagebmw() {
         if(bwm.src.match("./multimedia/picture/assets/bmwlogoicon.png")){
             utama.src = ("./multimedia/picture/list-motosport/bmw/bgslidebwm.png")
             utama.style.width = ("900px")
             utama.style.transition = ("0.5s")
-        }
+        };
+        if (window.matchMedia("(max-width: 1600px)").matches){
+            utama.style.width = ("700px") 
+        };
+        if (window.matchMedia("(max-width: 1280px)").matches){
+            utama.style.width = ("600px") 
+        };
     }
 </script>
 

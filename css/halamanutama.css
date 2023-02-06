@@ -26,7 +26,7 @@ body
 { z-index: 5; bottom: 0; position: absolute; margin-left: 100px; }
 
 .motor-slide img 
-{ width: 800px; transform: translateX(0); transition: none; }
+{ width: 1000px; transform: translateX(0); transition: none; }
 
 @media only screen and (max-width: 576px) {
     .motor-slide
@@ -36,7 +36,7 @@ body
     { width: 100% !important; }
 
     .text
-    { width: 100%; margin-top: 50px; height: 100vh; position: fixed; float:inherit; margin-left: auto; padding:10px 50px ;}
+    { width: 100%; margin-top: 50px; height: 100vh; position: fixed; float: inherit; margin-left: auto; padding:10px 50px ;}
 
     .text p
     { text-align: center; box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; border-radius: 3px;} 
@@ -46,4 +46,34 @@ body
 
     body 
     { overflow-x: scroll; }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 767px) {
+    body
+    { overflow-y: hidden; }
+    
+    .text
+    { width: 450px; font-size: 12px; }
+
+    .motor-slide img
+    { width: 800px ;}
+}
+
+@media only screen  and (max-width: 768px) and (min-width: 577px){
+    .text
+    { position: absolute; margin-left: 22%;}
+
+    .motor-slide
+    {  display: none;}
+}
+
+@media only screen  and (max-width: 1280px) and (min-width: 992px){
+
+    .motor-slide img
+    { width: 600px ;}
+    .motor-slide 
+    { margin-left: 20px; }
+
+    .list-merk img
+    { width: 60px; }
 }
