@@ -17,6 +17,8 @@ Kelas : IF - 8
     <link rel="stylesheet" type="text/css" href="./css/halamanutama.css">
     </head>
 <body>
+<div id="preloader"></div>
+
 <header>
     <div class="container">
         <nav class="navbar sticky-top navbar-expand-lg bg-transparent" id="navigation">
@@ -76,6 +78,14 @@ Kelas : IF - 8
     </div>
 </div>
 
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        preloader.style.display = "none"
+        preloader.style.transition = "fade"
+    })
+</script>
 
 <script>
     const ducati = document.getElementById('ducati')
