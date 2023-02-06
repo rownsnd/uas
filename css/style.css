@@ -130,6 +130,11 @@ header
 .list-merk img:hover
 { opacity: 100%;}
 
+.more-c
+{ display: flex; justify-content: space-between;}
+
+.more-c iframe
+{ margin-top: 50px; }
 
 @media only screen and (max-width: 576px) {
     header
@@ -180,7 +185,11 @@ header
     .list-merk img 
     { width: 70px; opacity: 100%; }
 
+    .more-c
+    { flex-direction: column; }
 
+    .more-c iframe
+    { margin-left: 30px; }
 }
 @media only screen and (min-width: 768px) {
     .navbar-nav
