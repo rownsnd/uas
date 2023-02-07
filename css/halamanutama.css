@@ -75,7 +75,7 @@ body
 
 @media only screen  and (max-width: 1280px) and (min-width: 992px){
     .text
-    { width: 450px; font-size: 12px; }
+    { width: 450px; font-size: 12px; margin-top: 35px;}
 
     .motor-slide img
     { width: 600px ;}
@@ -85,6 +85,9 @@ body
 
     .list-merk img
     { width: 60px; }
+
+    body
+    { overflow-y: hidden; }
 }
 @media only screen  and (max-width: 991px){
     .motor-slide
