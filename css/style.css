@@ -210,9 +210,6 @@ header
     .nav-link
     { position: relative; }
 
-    /* .nav-link::after
-    { opacity: 0; transition: all 0.2s; content: ''; height: 2px; width: 100%; background-color:#e5322e; position: absolute; bottom: 0; left: 0; text-transform: uppercase;} */
-
     .nav-link:hover::after
     {  opacity: 1; }
 }
